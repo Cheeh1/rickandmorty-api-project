@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import Header from "./components/Header"
 import "./styles/style.scss"
 
 const App = () => {
@@ -19,19 +18,6 @@ const App = () => {
 
   return (
     <>
-      < Header />
-      {/* <div>
-      proile/:id
-    {characters.map(character => (
-      <div key={character.id}>
-        <h2>{character.name}</h2>
-        <p>{character.status}</p>
-        <img src={character.image} alt="character-images" />
-        <h3>{character.status} - <span>{character.species}</span></h3>
-      </div>
-    ))}
-  </div> */}
-
       <section className='container'>
         {characters.map(character => (
           <div className='character'>

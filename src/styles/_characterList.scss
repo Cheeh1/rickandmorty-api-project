@@ -37,6 +37,7 @@
         font-size: 2.5rem;
         color: $textColor1;
         cursor: pointer;
+        font-family: 'Poppins', sans-serif;
       }
       .character-name:hover {
         color: $hoverColor;
@@ -45,17 +46,20 @@
       .character-status {
         font-size: 1.5rem;
         color: $textColor1;
+        font-family: 'Open Sans', sans-serif;
       }
   
       .character-location-title {
         color: $textColor2;
         font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
       }
   
       .character-location-details {
         color: $textColor1;
         font-size: 1.8rem;
-        cursor: pointer
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
       }
       .character-location-details:hover {
         color: $hoverColor;

@@ -1,10 +1,15 @@
+.alignment {
+    display: flex;
+    flex-direction: column;
+}
+
 .details-container {
     display: flex;
     justify-content: center;
     // align-items: center;
     gap: 30px;
     margin-top: 10em;
-    margin-bottom: 8em;
+    margin-bottom: 1em;
 }
 
 .details-img {
@@ -26,4 +31,11 @@
 .details-info-other {
     font-size: 3.0rem;
     color: #ffff;
+}
+
+.return-link {
+    text-decoration: none;
+    color: #FF9800;
+    font-size: 2.0rem;
+    text-align: center;
 }

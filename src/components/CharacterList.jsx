@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
 
     useEffect(() => {
-        axios.get('https://rickandmortyapi.com/api/character')
+        axios.get(`https://rickandmortyapi.com/api/character/?name=${searchTerm}`)
             .then(res => {
                 console.log(res)
                 setCharacters(res.data.results)
@@ -14,10 +15,13 @@ const CharacterList = () => {
             .catch(err => {
                 console.log(err)
             })
-    }, [])
+    }, [searchTerm])
 
     return (
         <>
+            <div>
+                <input className='character-search' type="text" placeholder='Search Character' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}  />
+            </div>
             <section className='container'>
                 {characters.map(character => (
                     <div className='character' key={character.id}>
@@ -26,7 +30,9 @@ const CharacterList = () => {
                         </Link>
                         <div className='character-info'>
                             <div className='details-block'>
-                                <h2 className='character-name'>{character.name}</h2>
+                                <Link className='character-name-link' to={`/characters/${character.id}`}>
+                                    <h2 className='character-name'>{character.name}</h2>
+                                </Link>
                                 <h3 className='character-status'>{`${character.status} - ${character.species}`}</h3>
                             </div>
                             <div className='details-block'>

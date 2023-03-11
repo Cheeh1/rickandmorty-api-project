@@ -1,0 +1,29 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 30px;
+    margin-top: 10em;
+    margin-bottom: 8em;
+}
+
+.details-img {
+    border-radius: 10px;
+}
+
+.details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffff;
+}
+
+.details-info-name {
+    font-size: 5.0rem;
+    color: #ffff;
+}
+
+.details-info-other {
+    font-size: 3.0rem;
+    color: #ffff;
+}

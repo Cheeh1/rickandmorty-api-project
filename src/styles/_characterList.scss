@@ -29,16 +29,13 @@
     .character-image {
       width: 15vw;
       height: 100%;
-      cursor: pointer;
     }
   
     .character-info {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 20px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      gap: 10px;
   
       .details-block {
         display: flex;
@@ -75,7 +72,6 @@
       .character-location-details {
         color: $textColor1;
         font-size: 1.8rem;
-        cursor: pointer;
         font-family: 'Open Sans', sans-serif;
       }
       .character-location-details:hover {
@@ -93,4 +89,10 @@
         color: $hoverColor;
       }
     }
+
+    .info-logo {
+        cursor: pointer;
+        margin-top: 1.5em;
+        margin-left: 2em;
+      }
   }

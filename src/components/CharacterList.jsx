@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import info from '../assets/info-circle.svg'
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState([])
@@ -20,14 +21,14 @@ const CharacterList = () => {
     return (
         <>
             <div>
-                <input className='character-search' type="text" placeholder='Search Character' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}  />
+                <input className='character-search' type="text" placeholder='Search Character' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
             <section className='container'>
                 {characters.map(character => (
                     <div className='character' key={character.id}>
-                        <Link to={`/characters/${character.id}`}>
+                        <div>
                             <img className='character-image' src={character.image} alt={character.image} />
-                        </Link>
+                        </div>
                         <div className='character-info'>
                             <div className='details-block'>
                                 <Link className='character-name-link' to={`/characters/${character.id}`}>
@@ -44,6 +45,9 @@ const CharacterList = () => {
                                 <p className='character-first-location'>{character.location.name}</p>
                             </div>
                         </div>
+                        <Link to={`/characters/${character.id}`}>
+                            <img className='info-logo' src={info} alt='info-logo' />
+                        </Link>
                     </div>
                 ))}
             </section>

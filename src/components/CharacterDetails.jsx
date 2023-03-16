@@ -1,17 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import { useQuery } from 'react-query';
 import home from "../assets/house.svg"
 
 const CharacterDetails = () => {
-    const [character, setCharacter] = useState({})
+    // const [character, setCharacter] = useState({})
+
+    // useEffect(() => {
+        //     axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+        //         .then(res => setCharacter(res.data))
+        //         .catch(err => console.log(err))
+        // }, [id])
+
     const { id } = useParams()
 
-    useEffect(() => {
-        axios.get(`https://rickandmortyapi.com/api/character/${id}`)
-            .then(res => setCharacter(res.data))
-            .catch(err => console.log(err))
-    }, [id])
+    const { isLoading, error, data: character } = useQuery(
+        ['character', id],
+        () => axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+            .then((res) => res.data)
+    )
+
+    if (isLoading) return <div>Loading...</div>
+    if (error) return <div>Error: {error.message}</div>
 
     return (
         <>

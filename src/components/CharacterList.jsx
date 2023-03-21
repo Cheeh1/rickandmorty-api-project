@@ -35,7 +35,7 @@ const CharacterList = () => {
                                     <h2 className='character-name'>{character.name}</h2>
                                 </Link>
                                 <div className='character-status-section'>
-                                    <p className={character.status === "Alive" ? "alives" :  character.status === "Dead" ? "deads" : "unknowns"}></p>
+                                    <p className={character.status === "Alive" ? "alives" :  character.status === "Dead" ? "deads" : "unknowns"}></p> {/*extension of ternary operator when using three conditions */}
                                     <h3 className='character-status'>{`${character.status} - ${character.species}`}</h3>
                                 </div>
                             </div>

@@ -36,3 +36,32 @@
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
 }
+
+.details-status {
+    display: flex;
+    gap: 10px;
+}
+
+.alive {
+    background-color: green;
+    margin-top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.dead {
+    background-color: red;
+    margin-top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.unknown {
+    background-color: grey;
+    margin-top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}

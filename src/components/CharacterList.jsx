@@ -34,7 +34,10 @@ const CharacterList = () => {
                                 <Link className='character-name-link' to={`/characters/${character.id}`}>
                                     <h2 className='character-name'>{character.name}</h2>
                                 </Link>
-                                <h3 className='character-status'>{`${character.status} - ${character.species}`}</h3>
+                                <div className='character-status-section'>
+                                    <p className={character.status === "Alive" ? "alives" :  character.status === "Dead" ? "deads" : "unknowns"}></p>
+                                    <h3 className='character-status'>{`${character.status} - ${character.species}`}</h3>
+                                </div>
                             </div>
                             <div className='details-block'>
                                 <p className='character-location-title'>Last known location:</p>

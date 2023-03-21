@@ -36,7 +36,10 @@ const CharacterDetails = () => {
                 </div>
                 <div className='details-info'>
                     <h1 className='details-info-name'>{character.name}</h1>
-                    <p className='details-info-other'>{`Status: ${character.status}`}</p>
+                    <div className='details-status'>
+                        <p className='details-info-other'>{`Status: ${character.status}`}</p>
+                        <p className={character.status === "Alive" ? "alive" : character.status === "Dead" ? "dead" : "unknown"}></p>
+                    </div>
                     <p className='details-info-other'>{`Species: ${character.species}`}</p>
                     <p className='details-info-other'>{`Gender: ${character.gender}`}</p>
                     <p className='details-info-other'>{`Location: ${character.loaction?.name}`}</p>

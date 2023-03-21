@@ -1,98 +1,130 @@
 .character-search {
-    padding: 0.5em 0.5em;
-    margin: 2em 25em 0 25em;
-    font-size: 2.0rem;
-    border: none;
-    border-radius: 5px;
+  padding: 0.5em 0.5em;
+  margin: 2em 25em 0 25em;
+  font-size: 2.0rem;
+  border: none;
+  border-radius: 5px;
 }
 
 .character-search::placeholder {
-    font-size: 1.8rem;
-    text-align: center;
-    color: #95979a;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #95979a;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 30px;
-    padding: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 30px;
+  padding: 50px 30px;
+}
+
+.character {
+  display: flex;
+  gap: 20px;
+  background-color: #3C3E44;
+  border-radius: 10px;
+
+  .character-image {
+    width: 15vw;
+    height: 100%;
   }
-  
-  .character {
+
+  .character-info {
     display: flex;
-    gap: 20px;
-    background-color: #3C3E44;
-    border-radius: 10px;
-  
-    .character-image {
-      width: 15vw;
-      height: 100%;
-    }
-  
-    .character-info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    .details-block {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-  
-      .details-block {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-      }
-
-      .character-name-link {
-        text-decoration: none;
-      }
-  
-      .character-name {
-        font-size: 2.5rem;
-        color: $textColor1;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-      }
-      .character-name:hover {
-        color: $hoverColor;
-      }
-  
-      .character-status {
-        font-size: 1.5rem;
-        color: $textColor1;
-        font-family: 'Open Sans', sans-serif;
-      }
-  
-      .character-location-title {
-        color: $textColor2;
-        font-size: 1.5rem;
-        font-family: 'Open Sans', sans-serif;
-      }
-  
-      .character-location-details {
-        color: $textColor1;
-        font-size: 1.8rem;
-        font-family: 'Open Sans', sans-serif;
-      }
-      .character-location-details:hover {
-        color: $hoverColor;
-      }
-  
-      .character-sight {
-        @extend .character-location-title;
-      }
-  
-      .character-first-location {
-        @extend .character-location-details;
-      }
-      .character-first-location:hover {
-        color: $hoverColor;
-      }
+      gap: 3px;
     }
 
-    .info-logo {
-        cursor: pointer;
-        margin-top: 1.5em;
-        margin-left: 2em;
-      }
+    .character-name-link {
+      text-decoration: none;
+    }
+
+    .character-name {
+      font-size: 2.5rem;
+      color: $textColor1;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .character-name:hover {
+      color: $hoverColor;
+    }
+
+    .character-status-section {
+      display: flex;
+      gap: 10px;
+    }
+
+    .deads {
+      background-color: red;
+      margin-top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+    }
+
+    .alives {
+      background-color: green;
+      margin-top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+    }
+    
+    .unknowns {
+      background-color: grey;
+      margin-top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
   }
+
+    .character-status {
+      font-size: 1.5rem;
+      color: $textColor1;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .character-location-title {
+      color: $textColor2;
+      font-size: 1.5rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .character-location-details {
+      color: $textColor1;
+      font-size: 1.8rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .character-location-details:hover {
+      color: $hoverColor;
+    }
+
+    .character-sight {
+      @extend .character-location-title;
+    }
+
+    .character-first-location {
+      @extend .character-location-details;
+    }
+
+    .character-first-location:hover {
+      color: $hoverColor;
+    }
+  }
+
+  .info-logo {
+    cursor: pointer;
+    margin-top: 1.5em;
+    margin-left: 2em;
+  }
+}

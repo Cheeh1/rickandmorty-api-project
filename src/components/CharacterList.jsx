@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import info from '../assets/info-circle.svg'
+import Header from './Header';
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState([])
@@ -20,6 +21,7 @@ const CharacterList = () => {
 
     return (
         <>
+        < Header />
             <div>
                 <input className='character-search' type="text" placeholder='Search Character' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             </div>

@@ -10,7 +10,7 @@
 }
 
 .nav-img {
-    width: 15%;
+    width: 12%;
     height: 100%;
     border-radius: 20px;
 }
@@ -68,11 +68,11 @@ ul {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     padding-top: 20px;
-    padding-bottom: 50px;
-    background-image: url(/src/assets/rickandmortylogo.jpeg);
+    padding-bottom: 80px;
+    background-image: url(/src/assets/rickandmortylogo.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    // background-size: cover;
 }
 
 .header-text::selection {

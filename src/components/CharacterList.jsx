@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import info from '../assets/info-circle.svg'
 import Header from './Header';
+import Footer from './Footer';
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState([])
@@ -56,6 +57,7 @@ const CharacterList = () => {
                     </div>
                 ))}
             </section>
+            < Footer />
         </>
     )
 }

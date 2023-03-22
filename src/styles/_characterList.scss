@@ -63,6 +63,11 @@
       gap: 10px;
     }
 
+    .character-status::selection {
+      background-color: #000000;
+      color: $hoverColor;
+    }
+
     .deads {
       background-color: red;
       margin-top: 5px;
@@ -99,6 +104,11 @@
       font-family: 'Open Sans', sans-serif;
     }
 
+    .character-location-title::selection {
+      background-color: #000000;
+      color: $hoverColor;
+    }
+
     .character-location-details {
       color: $textColor1;
       font-size: 1.8rem;
@@ -111,6 +121,11 @@
 
     .character-sight {
       @extend .character-location-title;
+    }
+
+    .character-sight::selection {
+      background-color: #000000;
+      color: $hoverColor
     }
 
     .character-first-location {

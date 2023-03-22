@@ -1,0 +1,81 @@
+.header-bg {
+    background-color: #ffffff;
+}   
+
+.nav-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-img {
+    width: 15%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list {
+    font-size: 2.0rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-list:hover {
+    color: $hoverColor;
+}
+
+.nav-list::selection{
+    background-color: #000000;
+    color: $hoverColor;
+}
+
+.nav-list-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-list-1:hover {
+    background-color: $hoverColor;
+    color: #ffffff;
+    border: none;
+}
+
+.nav-list-1::selection {
+    background-color: #000000;
+    color: $hoverColor;
+}
+
+.header-text {
+    font-size: 9.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: url(/src/assets/rickandmortylogo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text::selection {
+    background-color: #000000;
+    color: $hoverColor;
+}

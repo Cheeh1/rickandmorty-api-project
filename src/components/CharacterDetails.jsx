@@ -30,7 +30,7 @@ const CharacterDetails = () => {
                 <img src={home} alt='home-logo' />
             </Link>
 
-            <div className='details-container'>
+            <section className='details-container'>
                 <div>
                     <img className='details-img' src={character.image} alt={character.name} />
                 </div>
@@ -45,7 +45,7 @@ const CharacterDetails = () => {
                     <p className='details-info-other'>{`Location: ${character.loaction?.name}`}</p>
                     <p className='details-info-other'>{`Origin: ${character.origin?.name}`}</p>
                 </div>
-            </div>
+            </section>
 
         </>
     )

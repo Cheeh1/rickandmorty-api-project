@@ -9,7 +9,7 @@
 .character-search::placeholder {
   font-size: 1.8rem;
   text-align: center;
-  color: #95979a;
+  color: rgb(149, 151, 154);
 }
 
 .container {
@@ -23,7 +23,7 @@
 .character {
   display: flex;
   gap: 20px;
-  background-color: #3C3E44;
+  background-color: rgb(60, 62, 68);
   border-radius: 10px;
 
   .character-image {
@@ -64,12 +64,12 @@
     }
 
     .character-status::selection {
-      background-color: #000000;
+      background-color: rgb(0, 0, 0);
       color: $hoverColor;
     }
 
     .deads {
-      background-color: red;
+      background-color: rgb(255, 0, 0);
       margin-top: 5px;
       width: 10px;
       height: 10px;
@@ -77,7 +77,7 @@
     }
 
     .alives {
-      background-color: green;
+      background-color: rgb(0, 128, 0);
       margin-top: 5px;
       width: 10px;
       height: 10px;
@@ -85,7 +85,7 @@
     }
     
     .unknowns {
-      background-color: grey;
+      background-color: rgb(128, 128, 128);
       margin-top: 5px;
       width: 10px;
       height: 10px;
@@ -105,7 +105,7 @@
     }
 
     .character-location-title::selection {
-      background-color: #000000;
+      background-color: rgb(0, 0, 0);
       color: $hoverColor;
     }
 
@@ -124,7 +124,7 @@
     }
 
     .character-sight::selection {
-      background-color: #000000;
+      background-color: rgb(0, 0, 0);
       color: $hoverColor
     }
 

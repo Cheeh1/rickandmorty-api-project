@@ -1,6 +1,6 @@
-$textColor1: #ffff;
-$textColor2: #9E9E9E;
-$hoverColor: #FF9800;
+$textColor1: rgb(255, 255, 255);
+$textColor2: rgb(158, 158, 158);
+$hoverColor: rgb(255, 152, 0);
 
 html {
   font-size: 62.5%;
@@ -16,7 +16,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #272B33;
+  background-color: rgb(39, 43, 51);
 }
 
 @import "characterList";

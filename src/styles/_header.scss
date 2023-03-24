@@ -1,5 +1,5 @@
 .header-bg {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
 }   
 
 .nav-bg {
@@ -28,7 +28,7 @@ ul {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     text-decoration: none;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
 
 .nav-list:hover {
@@ -36,29 +36,29 @@ ul {
 }
 
 .nav-list::selection{
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
     color: $hoverColor;
 }
 
 .nav-list-1 {
     font-size: 1.5rem;
     font-weight: 600;
-    border: 1px solid red;
+    border: 1px solid rgb(255, 0, 0);
     border-radius: 10px;
     padding: 10px 10px;
     cursor: pointer;
     text-decoration: none;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
 
 .nav-list-1:hover {
     background-color: $hoverColor;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     border: none;
 }
 
 .nav-list-1::selection {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
     color: $hoverColor;
 }
 
@@ -76,6 +76,6 @@ ul {
 }
 
 .header-text::selection {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
     color: $hoverColor;
 }

@@ -85,3 +85,21 @@
         line-height: 1.0;
     }
 }
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .details-container {
+    padding-left: 20px;
+  }
+
+  .details-img {
+    height: 100%;
+  }
+
+  .details-info {
+    margin-left: 70px;
+  }
+
+    .details-info-name {
+    font-size: 4.5rem;
+   }
+}

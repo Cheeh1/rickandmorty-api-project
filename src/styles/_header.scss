@@ -92,6 +92,7 @@ ul {
     .nav-img {
         width: 30%;
     }
+
     .nav-list-1 {
         display: none;
     }
@@ -109,4 +110,13 @@ ul {
         padding-top: 40px;
         background-size: cover;
     }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .header-text {
+    font-size: 7.0rem;
+    padding-top: 100px;
+    background-size: cover;
+    line-height: 1.3;
+  }
 }

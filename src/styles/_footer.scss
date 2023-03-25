@@ -74,7 +74,7 @@
 
 .founder {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     padding: 0 5px 0 5px;
     font-family: 'Poppins', sans-serif;
 }
@@ -85,4 +85,16 @@
 
 .twitter {
     width: 25%;
+}
+
+@media screen and (max-width: 480px) {
+    .ftr-2 {
+        gap: 10px;
+    }
+
+    .ftr-3 {
+        // border: 1px solid red;
+        display: none;
+    }
+
 }

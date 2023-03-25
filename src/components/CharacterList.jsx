@@ -23,7 +23,7 @@ const CharacterList = () => {
     return (
         <>
         < Header />
-            <div>
+            <div className='search-push'>
                 <input className='character-search' type="text" placeholder='Search Character' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
             <section className='container'>
@@ -34,7 +34,7 @@ const CharacterList = () => {
                         </div>
                         <div className='character-info'>
                             <div className='details-block'>
-                                <Link className='character-name-link' to={`/characters/${character.id}`}>
+                                <Link className='character-name-link' to={`/character/${character.id}`}>
                                     <h2 className='character-name'>{character.name}</h2>
                                 </Link>
                                 <div className='character-status-section'>
@@ -51,7 +51,7 @@ const CharacterList = () => {
                                 <p className='character-first-location'>{character.location.name}</p>
                             </div>
                         </div>
-                        <Link to={`/characters/${character.id}`}>
+                        <Link to={`/character/${character.id}`}>
                             <img className='info-logo' src={info} alt='info-logo' />
                         </Link>
                     </div>

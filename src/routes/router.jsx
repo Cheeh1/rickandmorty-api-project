@@ -8,7 +8,7 @@ const RouterLink = () => {
             <Router>
                 <Routes>
                     <Route path='/' element={<CharacterList />} />
-                    <Route path='/characters/:id' element={<CharacterDetails />} />
+                    <Route path='/character/:id' element={<CharacterDetails />} />
                 </Routes>
             </Router>
 

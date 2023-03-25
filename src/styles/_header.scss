@@ -62,6 +62,14 @@ ul {
     color: $hoverColor;
 }
 
+.support {
+    display: none;
+}
+
+.header-line {
+    border: 1px solid rgb(225, 221, 221);
+}
+
 .header-text {
     font-size: 9.5rem;
     text-align: center;
@@ -78,4 +86,27 @@ ul {
 .header-text::selection {
     background-color: rgb(0, 0, 0);
     color: $hoverColor;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-img {
+        width: 30%;
+    }
+    .nav-list-1 {
+        display: none;
+    }
+
+    .support {
+        display: block;
+        background-color: $hoverColor;
+        padding: 10px 8px 2px 8px;
+        border-radius: 5px;
+    }
+
+    .header-text {
+        font-size:6.0rem;
+        line-height: 1.2;
+        padding-top: 40px;
+        background-size: cover;
+    }
 }
